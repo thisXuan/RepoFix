@@ -77,9 +77,8 @@ def test_doc_python_line_references_are_current():
                 return actual[candidate]
         return None
 
-    docs = [root / "README.md", root / "README_CN.md"] + sorted(
-        (root / "article").glob("*.md")
-    )
+    readmes = [root / "README.md", root / "README_CN.md"]
+    docs = [doc for doc in readmes if doc.exists()] + sorted((root / "article").glob("*.md"))
     stale = []
     for doc in docs:
         text = doc.read_text(encoding="utf-8")

@@ -1,8 +1,12 @@
 # RepoFix
 
+[![Engine size](https://img.shields.io/badge/engine-1322_LoC-blue)](repofix)
+
 **A small, understandable AI coding agent for your terminal.**
 
 RepoFix distills the core ideas behind modern coding agents into roughly 2,800 lines of Python. It can inspect a repository, edit files, run commands and tests, manage longer tasks, and work with any OpenAI-compatible LLM API.
+
+The full Python package contains 25 files, 2,815 physical lines, and 2,276 net lines of code.
 
 The codebase is intentionally compact, making RepoFix useful both as a working CLI and as a reference implementation for learning how tool-using coding agents are built.
 
